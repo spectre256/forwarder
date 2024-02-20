@@ -1,4 +1,4 @@
-forwarder.exe
-forwarder.zip
 httpreq.txt
+*.exe
 *.swp
+*.zip

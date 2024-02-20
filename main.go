@@ -137,6 +137,7 @@ Options:
 
             m.Lock()
             resp.Write(conn)
+	    io.WriteString(conn, "\x00")
             // Write to stdout as well, if not already set to stdout
             if !stdin && verbose {
                 resp.Write(os.Stdout)
